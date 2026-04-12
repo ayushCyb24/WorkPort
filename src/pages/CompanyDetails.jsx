@@ -21,7 +21,7 @@ const CompanyDetails = () => {
 
         <CompanyHeader company={company} />
 
-        {/* TABS */}
+        
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex gap-6 border-b mb-6">
             
@@ -50,7 +50,7 @@ const CompanyDetails = () => {
           </div>
         </div>
 
-        {/* CONTENT */}
+        
         {activeTab === "overview" && <CompanyAbout company={company} />}
         {activeTab === "jobs" && <CompanyJobs company={company} />}
 

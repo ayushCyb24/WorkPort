@@ -39,13 +39,13 @@ const companies = [
 
 const CompanyList = () => {
   return (
-    <div>
-      
-      <p className="mb-4 text-gray-600">
+    <div className="px-4 sm:px-6">
+
+      <p className="mb-4 text-sm sm:text-base text-gray-600">
         Showing {companies.length} companies
       </p>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
         
         {companies.map((company) => (
           

@@ -41,11 +41,11 @@ const Filters = () => {
 
       <hr className="my-6" />
 
-      {/* ---------------- LOCATION ---------------- */}
+     
       <div>
         <h3 className="font-medium mb-3">Location</h3>
 
-        {/* SEARCH INPUT */}
+    
         <div className="flex items-center border rounded-full px-4 py-2 mb-4">
           
           <input
@@ -55,7 +55,7 @@ const Filters = () => {
           />
         </div>
 
-        {/* LOCATION LIST */}
+       
         <div className="flex flex-col gap-3 text-sm text-gray-700 max-h-[180px] overflow-y-auto">
 
           {[
