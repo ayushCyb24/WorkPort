@@ -1,8 +1,10 @@
 import React from "react";
 import CompanyCard from "./CompanyCard";
+import { Link } from "react-router-dom";
 
 const companies = [
   {
+    id: "meta",
     name: "Meta",
     rating: 4.2,
     reviews: 1200,
@@ -10,6 +12,7 @@ const companies = [
     tags: ["Product", "1000+ employees"],
   },
   {
+    id: "netflix",
     name: "Netflix",
     rating: 4.5,
     reviews: 900,
@@ -17,6 +20,7 @@ const companies = [
     tags: ["Streaming", "Global"],
   },
   {
+    id: "spotify",
     name: "Spotify",
     rating: 4.3,
     reviews: 700,
@@ -24,6 +28,7 @@ const companies = [
     tags: ["Music", "Tech"],
   },
   {
+    id: "google",
     name: "Google",
     rating: 4.6,
     reviews: 2000,
@@ -35,17 +40,21 @@ const companies = [
 const CompanyList = () => {
   return (
     <div>
-
       
       <p className="mb-4 text-gray-600">
-        Showing 4 companies
+        Showing {companies.length} companies
       </p>
 
-     
       <div className="grid grid-cols-2 gap-6">
-        {companies.map((company, index) => (
-          <CompanyCard key={index} company={company} />
+        
+        {companies.map((company) => (
+          
+          <Link to={`/companies/${company.id}`} key={company.id}>
+            <CompanyCard company={company} />
+          </Link>
+
         ))}
+
       </div>
 
     </div>

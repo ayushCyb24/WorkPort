@@ -37,14 +37,19 @@ const Navbar = () => {
        </div>
        
         
-      <div className=" ml-auto flex items-center gap-4">
-      
-        <div className="flex items-center gap-2 cursor-pointer">
-        
-          <span className="hidden sm:block">Sign In</span>
+      <div className=" ml-auto flex items-center gap-2">
+      <Link to="/auth" className="px-6 py-2 rounded-full border border-green-500 text-green-500 font-semibold hover:bg-green-50 transition"
+      > Login
+      </Link>
+       
+  
+        <Link to="/auth?mode=register" className="px-5 py-2 rounded-full bg-green-600 text-white hover:bg-green-700 transition">
+          Register
+        </Link>
+
         </div>
-      </div>
-      
+        
+
     </nav>
   )
 }

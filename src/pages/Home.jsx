@@ -1,16 +1,19 @@
-import Navbar from "../components/Navbar";
+import { useState } from "react";
+
+
+
 import Hero from "../components/Hero";
-import SearchBar from "../components/Searchbar";
+
 import Categories from "../components/Categories";
 import Companies from "../components/Companies";
 import Testimonials from "../components/Testimonial";
 import FeaturedCompanies from "../components/FeaturedCompanies";
 
 const Home = () => {
+  const [showTour, setShowTour] = useState(true);
+
   return (
     <>
-    
-      <Navbar />
       <Hero />
       <Categories />
       <Companies />

@@ -8,7 +8,6 @@ import CompanyList from '../components/CompanyList'
 const Companies = () => {
   return (
     <>
-    <Navbar />
 
     <TopCompanies />
 

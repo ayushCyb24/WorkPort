@@ -6,7 +6,6 @@ import JobList from '../components/JobList'
 const Jobs = () => {
   return (
     <>
-    <Navbar />
     <SearchBar />
 
 {/* MAIN LAYOUT */}
