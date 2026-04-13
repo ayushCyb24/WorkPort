@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import CompanyHeader from "../components/company/CompanyHeader";
 import CompanyAbout from "../components/company/CompanyAbout";
 import CompanyJobs from "../components/company/CompanyJobs";
@@ -12,8 +11,7 @@ const CompanyDetails = () => {
 
   const [activeTab, setActiveTab] = useState("overview");
 
-  if (!company) return <div className="p-6">Company not found</div>;
-
+ 
   return (
     <>
 
